@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全球电话号码生成器</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌍 全球电话号码生成器</h1>
+            <p>生成并聆听来自世界各地的电话号码</p>
+        </header>
+
+        <main>
+            <div class="card">
+                <div class="control-group">
+                    <label for="country-select">选择国家 / 地区</label>
+                    <div class="select-wrapper">
+                        <select id="country-select">
+                            <option value="CN">🇨🇳 中国 (China)</option>
+                            <option value="US">🇺🇸 美国 (USA)</option>
+                            <option value="UK">🇬🇧 英国 (UK)</option>
+                            <option value="JP">🇯🇵 日本 (Japan)</option>
+                            <option value="DE">🇩🇪 德国 (Germany)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="display-area">
+                    <div id="phone-display" class="placeholder">点击生成...</div>
+                    <button id="speak-btn" class="icon-btn" title="朗读号码" disabled>
+                        🔊
+                    </button>
+                </div>
+
+                <button id="generate-btn" class="primary-btn">
+                    生成号码 ✨
+                </button>
+            </div>
+        </main>
+
+        <footer>
+            <p>基于 Web Speech API 构建 • 学习项目</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
