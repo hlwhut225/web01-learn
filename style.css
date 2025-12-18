@@ -1,199 +1,339 @@
 :root {
+    /* :root 选择器匹配文档的根元素，通常用于定义全局 CSS 变量 */
     --primary-color: #6366f1;
+    /* 定义主色调变量 (靛蓝色) */
     --primary-hover: #4f46e5;
+    /* 定义鼠标悬停时的主色调 (深一点的靛蓝色) */
     --bg-gradient-start: #f3f4f6;
+    /* 定义背景渐变的起始颜色 (浅灰) */
     --bg-gradient-end: #e5e7eb;
+    /* 定义背景渐变的结束颜色 (稍深的灰) */
     --card-bg: #ffffff;
+    /* 定义卡片背景色 (白色) */
     --text-main: #1f2937;
+    /* 定义主要文字颜色 (深灰) */
     --text-muted: #6b7280;
+    /* 定义次要/柔和文字颜色 (中灰) */
     --border-radius: 16px;
+    /* 定义圆角半径变量 */
     --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    /* 定义阴影效果变量 */
 }
 
 * {
+    /* 通配符选择器，选中页面所有元素 */
     box-sizing: border-box;
+    /* 让元素的宽度和高度包含 padding 和 border，避免布局溢出 */
     margin: 0;
+    /* 去除所有元素的默认外边距 */
     padding: 0;
+    /* 去除所有元素的默认内边距 */
 }
 
 body {
+    /* 设置 body 元素的样式 */
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    /* 设置字体，优先使用 Inter，没有则使用系统默认字体 */
     background: linear-gradient(135deg, var(--bg-gradient-start), var(--bg-gradient-end));
+    /* 设置 135 度角的线性渐变背景 */
     min-height: 100vh;
+    /* 设置最小高度为视窗高度的 given 100%，确保背景充满屏幕 */
     display: flex;
+    /* 使用 Flexbox 布局 */
     justify-content: center;
+    /* 水平居中对齐子元素 */
     align-items: center;
+    /* 垂直居中对齐子元素 */
     color: var(--text-main);
+    /* 设置默认文字颜色 */
 }
 
 .container {
+    /* 设置容器类的样式 */
     width: 100%;
+    /* 宽度占满父元素 */
     max-width: 480px;
+    /* 最大宽度限制为 480px，保持在大屏上不也不太宽 */
     padding: 20px;
+    /* 设置内边距 20px */
 }
 
 header {
+    /* 设置页眉标签的样式 */
     text-align: center;
+    /* 文字水平居中 */
     margin-bottom: 24px;
+    /* 下方留出 24px 的外边距 */
 }
 
 header h1 {
+    /* 设置页眉中 h1 标题的样式 */
     font-size: 1.8rem;
+    /* 设置字体大小 */
     font-weight: 700;
+    /* 设置字体粗细为粗体 */
     color: var(--text-main);
+    /* 使用主文字颜色变量 */
     margin-bottom: 8px;
+    /* 标题下方留出 8px 间距 */
 }
 
 header p {
+    /* 设置页眉中段落的样式 */
     color: var(--text-muted);
+    /* 使用次要文字颜色变量 */
     font-size: 0.95rem;
+    /* 设置稍小的字体大小 */
 }
 
 .card {
+    /* 卡片组件样式 */
     background: var(--card-bg);
+    /* 设置卡片背景色 */
     padding: 32px;
+    /* 设置卡片内边距为 32px */
     border-radius: var(--border-radius);
+    /* 设置卡片圆角 */
     box-shadow: var(--shadow);
+    /* 添加阴影效果，增加立体感 */
     transition: transform 0.2s ease;
+    /* 添加变换过渡效果，时长 0.2s，缓动函数为 ease */
 }
 
 .card:hover {
+    /* 鼠标悬停在卡片上时的样式 */
     transform: translateY(-2px);
+    /* 向上移动 2px，产生悬浮效果 */
 }
 
 .control-group {
+    /* 表单控件组样式 */
     margin-bottom: 24px;
+    /* 下方留出 24px 间距 */
 }
 
 label {
+    /* 标签样式 */
     display: block;
+    /* 设置为块级元素，独占一行 */
     margin-bottom: 8px;
+    /* 下方留出 8px 间距 */
     font-weight: 600;
+    /* 设置字体加粗 */
     font-size: 0.9rem;
+    /* 设置字体大小 */
     color: var(--text-main);
+    /* 设置文字颜色 */
 }
 
 .select-wrapper {
+    /* 下拉菜单包裹层样式，用于定位自定义箭头 */
     position: relative;
+    /* 设置为相对定位，作为子元素绝对定位的参考 */
 }
 
 select {
+    /* 下拉选择框样式 */
     width: 100%;
+    /* 宽度填满父容器 */
     padding: 12px 16px;
+    /* 设置内边距 */
     font-size: 1rem;
+    /* 设置字体大小 */
     border: 2px solid #e5e7eb;
+    /* 设置 2px 实线边框 */
     border-radius: 12px;
+    /* 设置圆角 */
     appearance: none;
+    /* 去除浏览器默认的下拉箭头样式 */
     background-color: #f9fafb;
+    /* 设置背景颜色 */
     cursor: pointer;
+    /* 鼠标悬停时显示手型光标 */
     transition: border-color 0.2s;
+    /* 边框颜色变化时添加过渡效果 */
 }
 
 select:focus {
+    /* 下拉框获得焦点时的样式 */
     outline: none;
+    /* 去除默认的轮廓线 */
     border-color: var(--primary-color);
+    /* 边框变为主色调 */
 }
 
 .select-wrapper::after {
+    /* 使用伪元素自定义下拉箭头 */
     content: '▼';
+    /* 设置内容为向下箭头字符 */
     font-size: 0.8rem;
+    /* 设置箭头大小 */
     color: var(--text-muted);
+    /* 设置箭头颜色 */
     position: absolute;
+    /* 绝对定位 */
     right: 16px;
+    /* 距离右侧 16px */
     top: 50%;
+    /* 垂直居中顶部 */
     transform: translateY(-50%);
+    /* 通过位移修正垂直居中 */
     pointer-events: none;
+    /* 禁止鼠标事件，点击箭头时能穿透到下方的 select */
 }
 
 .display-area {
+    /* 号码显示区域样式 */
     background: #f3f4f6;
+    /* 设置浅灰背景色 */
     border-radius: 12px;
+    /* 设置圆角 */
     padding: 20px;
+    /* 设置内边距 */
     margin-bottom: 24px;
+    /* 下方留出间距 */
     display: flex;
+    /* 使用 Flexbox 布局 */
     justify-content: space-between;
+    /* 子元素两端对齐 */
     align-items: center;
+    /* 子元素垂直居中 */
     border: 2px dashed #d1d5db;
+    /* 设置虚线边框 */
 }
 
 #phone-display {
+    /* 电话号码显示文本样式 */
     font-family: 'Monaco', 'Courier New', monospace;
+    /* 使用等宽字体，模拟数字显示屏 */
     font-size: 1.5rem;
+    /* 设置较大字体 */
     font-weight: 700;
+    /* 字体加粗 */
     color: var(--text-main);
+    /* 设置文字颜色 */
     letter-spacing: 1px;
+    /* 增加字符间距 */
 }
 
 #phone-display.placeholder {
+    /* 当没有号码时显示的占位符样式 */
     color: #9ca3af;
+    /* 设置较浅的灰色 */
     font-size: 1.2rem;
+    /* 字体稍小 */
     font-weight: 400;
+    /* 字体正常粗细 */
 }
 
 .icon-btn {
+    /* 图标按钮样式 (如复制、删除按钮) */
     background: none;
+    /* 无背景色 */
     border: none;
+    /* 无边框 */
     font-size: 1.5rem;
+    /* 图标大小 */
     cursor: pointer;
+    /* 鼠标悬停显示手型 */
     padding: 8px;
+    /* 内边距，增加点击区域 */
     border-radius: 50%;
+    /* 圆形按钮 */
     transition: background-color 0.2s, transform 0.1s;
+    /* 添加背景和变换过渡效果 */
     opacity: 0.6;
+    /* 默认半透明 */
 }
 
 .icon-btn:not(:disabled):hover {
+    /* 非禁用状态下的悬停样式 */
     background-color: #e5e7eb;
+    /* 悬停时添加浅灰背景 */
     opacity: 1;
+    /* 不透明度变为 1 */
 }
 
 .icon-btn:active {
+    /* 按钮按下时的样式 */
     transform: scale(0.95);
+    /* 稍微缩小，产生点击感 */
 }
 
 .icon-btn:disabled {
+    /* 按钮禁用时的样式 */
     cursor: not-allowed;
+    /* 鼠标显式禁止符号 */
     opacity: 0.3;
+    /* 降低不透明度 */
 }
 
 .primary-btn {
+    /* 主要操作按钮样式 (如拨打按钮) */
     width: 100%;
+    /* 宽度占满 */
     padding: 14px;
+    /* 内边距 */
     font-size: 1.1rem;
+    /* 字体大小 */
     font-weight: 600;
+    /* 字体加粗 */
     color: white;
+    /* 文字白色 */
     background-color: var(--primary-color);
+    /* 背景色使用主色调 */
     border: none;
+    /* 无边框 */
     border-radius: 12px;
+    /* 圆角 */
     cursor: pointer;
+    /* 鼠标手型 */
     transition: background-color 0.2s, transform 0.1s, box-shadow 0.2s;
+    /* 添加多个属性的过渡效果 */
 }
 
 .primary-btn:hover {
+    /* 悬停样式 */
     background-color: var(--primary-hover);
+    /* 背景色变深 */
     box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
+    /* 添加带颜色的阴影 */
 }
 
 .primary-btn:active {
+    /* 按下样式 */
     transform: scale(0.98);
+    /* 稍微缩小 */
 }
 
 footer {
+    /*页脚样式 */
     text-align: center;
+    /* 文字居中 */
     margin-top: 32px;
+    /* 上方留出间距 */
 }
 
 footer p {
+    /* 页脚段落样式 */
     font-size: 0.8rem;
+    /* 字体较小 */
     color: var(--text-muted);
+    /* 颜色较浅 */
     opacity: 0.8;
+    /* 透明度 */
 }
 
 @media (max-width: 400px) {
+
+    /* 媒体查询：当屏幕宽度小于 400px 时应用的样式 */
     .card {
         padding: 24px;
+        /* 减小卡片内边距，适应小屏幕 */
     }
-    
+
     #phone-display {
         font-size: 1.2rem;
+        /* 减小字体大小，防止溢出 */
     }
 }
