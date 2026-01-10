@@ -1,73 +1,148 @@
-<!DOCTYPE html> <!-- 声明文档类型为 HTML5 -->
-<html lang="zh-CN"> <!-- 根元素，设置语言为简体中文 -->
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8"> <!-- 设置字符编码为 UTF-8，防止乱码 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 设置视口，确保移动端显示正常 -->
-    <meta name="description" content="快速生成并朗读多个国家/地区的电话号码，体验多语言语音合成。"> <!-- 页面描述，有利于 SEO -->
-    <title>全球电话号码生成器</title> <!-- 页面标题，显示在浏览器标签页上 -->
-
-    <!-- 预连接到 Google Fonts 服务器，提升字体加载速度 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Number Generator - Global Fake Number Tools for Verification</title>
+    <meta name="description"
+        content="Free online Phone Number Generator for US, UK, China, Japan, Germany, and more. Generate valid format fake numbers for testing and verification purposes.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <!-- 引入样式表 style.css -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
-    <!-- 引入 Inter 字体 -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Phone Number Generator Global",
+      "url": "https://www.example.com/",
+      "description": "A comprehensive tool to generate valid format phone numbers for multiple countries including US, UK, China, and Japan.",
+      "applicationCategory": "UtilityApplication",
+      "operatingSystem": "All",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
 </head>
 
 <body>
-    <div class="container"> <!-- 页面主容器，用于限制内容宽度 -->
-        <header>
-            <h1>🌍 全球电话号码生成器</h1> <!-- 主标题 -->
-            <p>生成并聆听来自世界各地的电话号码</p> <!-- 副标题/描述 -->
-        </header>
 
-        <main>
-            <!-- 卡片容器，role="region" 增加语义化 -->
-            <div class="card" role="region" aria-label="电话号码生成器">
-                <div class="control-group"> <!-- 控制组容器 -->
-                    <label for="country-select">选择国家 / 地区</label> <!-- 下拉框标签 -->
-                    <div class="select-wrapper"> <!-- 自定义下拉框样式的包裹层 -->
-                        <!-- 这里的 value 对应 script.js 中的配置键名 -->
-                        <select id="country-select" aria-label="选择要生成的电话号码所属国家或地区">
-                            <option value="CN">🇨🇳 中国 (China)</option>
-                            <option value="US">🇺🇸 美国 (USA)</option>
-                            <option value="UK">🇬🇧 英国 (UK)</option>
-                            <option value="JP">🇯🇵 日本 (Japan)</option>
-                            <option value="DE">🇩🇪 德国 (Germany)</option>
-                            <option value="AU">🇦🇺 澳大利亚 (Australia)</option>
-                        </select>
-                    </div>
-                </div>
+    <header class="site-header">
+        <div class="container">
+            <h1><a href="index.html" title="Phone Number Generator Tool">Phone Number Generator</a></h1>
+            <p class="subtitle">Generate valid format phone numbers for testing and verification across the globe.</p>
+        </div>
+    </header>
 
-                <div class="display-area"> <!-- 号码显示区域 -->
-                    <!-- 显示生成的号码，placeholder 类用于未生成时的灰色样式 -->
-                    <div id="phone-display" class="placeholder" role="status" aria-live="polite">点击生成...</div>
-                    <!-- 朗读按钮，默认禁用 (disabled) -->
-                    <button id="speak-btn" class="icon-btn" type="button" title="朗读号码" aria-label="朗读当前号码" disabled>
-                        🔊
-                    </button>
-                </div>
+    <nav class="country-nav">
+        <div class="container">
+            <ul>
+                <li><a class="curr" href="index.html" title="Home Page">Home</a></li>
+                <li><a href="us-phone-number-generator.html" title="US phone number generate">United States</a></li>
+                <li><a href="china-phone-number-generator.html" title="China phone number generate">China</a></li>
+                <li><a href="uk-phone-number-generator.html" title="UK phone number generate">United Kingdom</a></li>
+                <li><a href="japan-phone-number-generator.html" title="Japan phone number generate">Japan</a></li>
+                <li><a href="germany-phone-number-generator.html" title="Germany phone number generate">Germany</a></li>
+                <li><a href="france-phone-number-generator.html" title="France phone number generate">France</a></li>
+                <li><a href="australia-phone-number-generator.html"
+                        title="Australia phone number generate">Australia</a></li>
+                <li><a href="canada-phone-number-generator.html" title="Canada phone number generate">Canada</a></li>
+                <li><a href="india-phone-number-generator.html" title="India phone number generate">India</a></li>
+                <li><a href="brazil-phone-number-generator.html" title="Brazil phone number generate">Brazil</a></li>
+            </ul>
+        </div>
+    </nav>
 
-                <!-- 生成按钮 -->
-                <button id="generate-btn" class="primary-btn" type="button" aria-label="生成新的电话号码">
-                    生成号码 ✅
-                </button>
+    <main class="container">
 
-                <!-- 当浏览器不支持或禁用 JS 时显示的提示 -->
-                <noscript>需要启用 JavaScript 才能生成并朗读电话号码。</noscript>
-            </div>
-        </main>
+        <section id="us" class="country-card">
+            <h2 title="generate US phone number">US Phone Number Generator</h2>
+            <p>Generate valid format US mobile and landline numbers complete with area codes. Ideal for testing North
+                American application forms.</p>
+            <a href="us-phone-number-generator.html" class="btn">US Phone Number Generator</a>
+        </section>
 
-        <footer>
-            <p>基于 Web Speech API 构建 · 学习项目</p>
-        </footer>
-    </div>
-    <!-- 引入 JavaScript 文件，defer 属性确保 HTML 解析完成后再执行脚本 -->
-    <script src="script.js" defer></script>
+        <section id="cn" class="country-card">
+            <h2 title="generate China phone number">China Phone Number Generator</h2>
+            <p>Create Mainland China phone numbers (+86) for verification testing. Supports formatting for major Chinese
+                carriers.</p>
+            <a href="china-phone-number-generator.html" class="btn">China Phone Number Generator</a>
+        </section>
+
+        <section id="uk" class="country-card">
+            <h2 title="generate UK phone number">UK Phone Number Generator</h2>
+            <p>Generate United Kingdom phone numbers (+44) including mobile (07xxx) and landline formats for system
+                validation.</p>
+            <a href="uk-phone-number-generator.html" class="btn">UK Phone Number Generator</a>
+        </section>
+
+        <section id="jp" class="country-card">
+            <h2 title="generate Japan phone number">Japan Phone Number Generator</h2>
+            <p>Get randomly generated Japanese phone numbers (+81) for testing diverse Asian market requirements.</p>
+            <a href="japan-phone-number-generator.html" class="btn">Japan Phone Number Generator</a>
+        </section>
+
+        <section id="de" class="country-card">
+            <h2 title="generate Germany phone number">Germany Phone Number Generator</h2>
+            <p>Produce German phone numbers (+49) with correct dialing codes suitable for DACH region software testing.
+            </p>
+            <a href="germany-phone-number-generator.html" class="btn">Germany Phone Number Generator</a>
+        </section>
+
+        <section id="fr" class="country-card">
+            <h2 title="generate France phone number">France Phone Number Generator</h2>
+            <p>Generate standard French phone numbers (+33) for testing systems requiring European format validation.
+            </p>
+            <a href="france-phone-number-generator.html" class="btn">France Phone Number Generator</a>
+        </section>
+
+        <section id="au" class="country-card">
+            <h2 title="generate Australia phone number">Australia Phone Number Generator</h2>
+            <p>Create valid Australian phone numbers (+61), including mobile and landline formats for Oceanic user
+                testing.</p>
+            <a href="australia-phone-number-generator.html" class="btn">Australia Phone Number Generator</a>
+        </section>
+
+        <section id="ca" class="country-card">
+            <h2 title="generate Canada phone number">Canada Phone Number Generator</h2>
+            <p>Generate Canadian phone numbers (+1) compatible with NANP standards for North American regional testing.
+            </p>
+            <a href="canada-phone-number-generator.html" class="btn">Canada Phone Number Generator</a>
+        </section>
+
+        <section id="in" class="country-card">
+            <h2 title="generate India phone number">India Phone Number Generator</h2>
+            <p>Generate Indian mobile numbers (+91) to test verification flows for one of the world's largest mobile
+                markets.</p>
+            <a href="india-phone-number-generator.html" class="btn">India Phone Number Generator</a>
+        </section>
+
+        <section id="br" class="country-card">
+            <h2 title="generate Brazil phone number">Brazil Phone Number Generator</h2>
+            <p>Create Brazilian phone numbers (+55) with correct formatting for testing applications in South America.
+            </p>
+            <a href="brazil-phone-number-generator.html" class="btn">Brazil Phone Number Generator</a>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; <span id="year"></span> <a href="index.html"
+                    style="color: inherit; text-decoration: none;"></a>Phone Number Generator</a>. All rights reserved.
+            </p>
+            <p class="small">This tool generates random numbers for testing purposes only. Do not use for illegal
+                activities.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
