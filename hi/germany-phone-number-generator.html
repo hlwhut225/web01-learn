@@ -1,148 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Germany Phone Number Generator - +49 Numbers</title>
+    <title>जर्मनी फोन नंबर जनरेटर - +49 नंबर</title>
     <meta name="description"
-        content="Generate random German phone numbers for testing. Covers +49 country code and common mobile prefixes for Germany.">
+        content="परीक्षण के लिए यादृच्छिक जर्मन फोन नंबर जेनरेट करें। जर्मनी के लिए +49 देश कोड और सामान्य मोबाइल उपसर्गों को कवर करता है।">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
-    <style>
-        .small-header {
-            padding: 30px 0;
-        }
 
-        .breadcrumb {
-            margin-bottom: 10px;
-            font-size: 0.9rem;
-            color: var(--text-muted);
-        }
-
-        .breadcrumb a {
-            color: var(--accent-color);
-            text-decoration: none;
-        }
-
-        .page-content {
-            max-width: 800px;
-        }
-
-        .tool-section {
-            background: white;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: var(--shadow-md);
-            margin-bottom: 40px;
-            text-align: center;
-        }
-
-        .display-area {
-            background: #f0f2f5;
-            padding: 20px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            font-family: monospace;
-            font-size: 2rem;
-            color: #333;
-        }
-
-        .large-btn {
-            font-size: 1.2rem;
-            padding: 16px 32px;
-            max-width: 300px;
-            margin: 0 auto;
-            cursor: pointer;
-            border: none;
-        }
-
-        .seo-content h2 {
-            color: var(--primary-color);
-            margin-top: 30px;
-            margin-bottom: 16px;
-        }
-
-        .seo-content ul {
-            padding-left: 20px;
-            margin-bottom: 20px;
-            color: var(--text-muted);
-        }
-
-        .seo-content li {
-            margin-bottom: 8px;
-        }
-    </style>
 </head>
 
 <body>
     <header class="site-header">
         <div class="container">
-            <div class="site-logo"><a href="index.html" title="Phone Number Generator Tool">फ़ोन नंबर जनरेटर</a>
+            <div class="site-logo"><a href="index.html" title="फ़ोन नंबर जनरेटर टूल">फ़ोन नंबर जनरेटर</a>
             </div>
             <div class="language-switcher">
-                <a href="../index.html">English</a>
-                <a href="index.html" class="active" title="Hindi">हिन्दी</a>
-                <a href="../tl/index.html" title="Filipino">Filipino</a>
+                <a href="../germany-phone-number-generator.html" title="English">English</a>
+                <a href="germany-phone-number-generator.html" class="active" title="हिन्दी">हिन्दी</a>
+                <a href="../tl/germany-phone-number-generator.html" title="Filipino">Filipino</a>
             </div>
-            <p class="subtitle">Generate valid format phone numbers for testing and verification across the globe.</p>
+            <p class="subtitle">दुनिया भर में परीक्षण और सत्यापन के लिए मान्य प्रारूप फोन नंबर जेनरेट करें।</p>
         </div>
     </header>
 
     <nav class="country-nav">
         <div class="container">
             <ul>
-                <li><a href="index.html" title="Home Page">Home</a></li>
-                <li><a href="us-phone-number-generator.html" title="US phone number generate">United States</a></li>
-                <li><a href="china-phone-number-generator.html" title="China phone number generate">China</a></li>
-                <li><a href="uk-phone-number-generator.html" title="UK phone number generate">United Kingdom</a></li>
-                <li><a href="japan-phone-number-generator.html" title="Japan phone number generate">Japan</a></li>
+                <li><a href="index.html" title="होम पेज">होम</a></li>
+                <li><a href="us-phone-number-generator.html" title="अमेरिकी फोन नंबर जेनरेट करें">संयुक्त राज्य
+                        अमेरिका</a>
+                </li>
+                <li><a href="china-phone-number-generator.html" title="चीन फोन नंबर जेनरेट करें">चीन</a></li>
+                <li><a href="uk-phone-number-generator.html" title="यूके फोन नंबर जेनरेट करें">यूनाइटेड किंगडम</a></li>
+                <li><a href="japan-phone-number-generator.html" title="जापान फोन नंबर जेनरेट करें">जापान</a></li>
                 <li><a class="curr" href="germany-phone-number-generator.html"
-                        title="Germany phone number generate">Germany</a></li>
-
+                        title="जर्मनी फोन नंबर जेनरेट करें">जर्मनी</a></li>
             </ul>
         </div>
     </nav>
     <main class="container page-content">
-        <h1 style="margin-bottom: 20px; color: var(--primary-color);">Germany Phone Number Generator</h1>
+        <h1 style="margin-bottom: 20px; color: var(--primary-color);">जर्मनी फोन नंबर जनरेटर</h1>
         <section class="tool-section">
             <div class="tool-container" data-country="DE">
-                <button id="generate-btn" class="btn large-btn">Generate German Number</button>
+                <button id="generate-btn" class="btn large-btn">जर्मन नंबर जेनरेट करें</button>
                 <div class="result-list"></div>
             </div>
         </section>
         <article class="seo-content">
-            <h2>About German Phone Numbers</h2>
-            <p>German phone numbers (Deutsche Telefonnummern) use the +49 country code. Mobile numbers often start with
-                015, 016, or 017.</p>
+            <h2>जर्मन फोन नंबरों के बारे में</h2>
+            <p>जर्मन फोन नंबर (Deutsche Telefonnummern) +49 देश कोड का उपयोग करते हैं। मोबाइल नंबर अक्सर 015, 016, या
+                017 से शुरू होते हैं।</p>
 
-            <h2>Generate Germany Phone Number for Testing</h2>
-            <p>Our **Germany mobile phone number generator** creates realistic test data. Use this **fake Germany phone
-                number generator** to validate forms requiring +49 numbers. It acts as a precise **Germany cell phone
-                number generator** for your QA needs.</p>
+            <h2>परीक्षण के लिए जर्मनी फोन नंबर जेनरेट करें</h2>
+            <p>हमारा **जर्मनी मोबाइल फोन नंबर जनरेटर** यथार्थवादी परीक्षण डेटा बनाता है। +49 नंबरों की आवश्यकता वाले
+                फॉर्म को मान्य करने के लिए इस **फर्जी जर्मनी फोन नंबर जनरेटर** का उपयोग करें। यह आपकी QA आवश्यकताओं के
+                लिए एक सटीक **जर्मनी सेल फोन नंबर जनरेटर** के रूप में कार्य करता है।</p>
 
-            <h2>Random Germany Number Generator (+49)</h2>
-            <p>Need a **random Germany phone number**? This tool creates valid-format **+49 phone number generator**
-                outputs. It ensures you have the correct mobile prefixes (Handy-Vorwahlen) for authentic-looking test
-                data.</p>
+            <h2>यादृच्छिक जर्मनी नंबर जनरेटर (+49)</h2>
+            <p>एक **यादृच्छिक जर्मनी फोन नंबर** की आवश्यकता है? यह टूल मान्य-प्रारूप **+49 फोन नंबर जनरेटर** आउटपुट
+                बनाता है। यह सुनिश्चित करता है कि आपके पास प्रामाणिक दिखने वाले परीक्षण डेटा के लिए सही मोबाइल उपसर्ग
+                (Handy-Vorwahlen) हैं।</p>
 
-            <h2>Germany Phone Number Generator for Verification</h2>
-            <p>Test your SMS verification UI with our **Germany phone number generator for verification**. While
-                providing **fake phone number generator Germany** outputs, the format is perfectly valid for testing
-                **random phone number generator Germany** input fields.</p>
+            <h2>सत्यापन के लिए जर्मनी फोन नंबर जनरेटर</h2>
+            <p>हमारे **जर्मनी फोन नंबर जनरेटर सत्यापन के लिए** के साथ अपने एसएमएस सत्यापन यूआई का परीक्षण करें। **फर्जी
+                फोन नंबर जनरेटर जर्मनी** आउटपुट प्रदान करते समय, प्रारूप **यादृच्छिक फोन नंबर जनरेटर जर्मनी** इनपुट
+                फ़ील्ड के परीक्षण के लिए पूरी तरह से मान्य है।</p>
 
-            <h2>Free Germany Virtual Phone Number Tool</h2>
-            <p>Use our **free Germany phone number generator** for all your testing. Generate a **fake mobile number
-                Germany** instantly. This **Germany phone number generator** is the go-to tool for developers needing
-                quick German mock numbers.</p>
+            <h2>मुफ्त जर्मनी वर्चुअल फोन नंबर टूल</h2>
+            <p>अपने सभी परीक्षणों के लिए हमारे **मुफ्त जर्मनी फोन नंबर जनरेटर** का उपयोग करें। तुरंत **फर्जी मोबाइल नंबर
+                जर्मनी** जेनरेट करें। यह **जर्मनी फोन नंबर जनरेटर** उन डेवलपर्स के लिए सबसे अच्छा टूल है जिन्हें त्वरित
+                जर्मन मॉक नंबरों की आवश्यकता होती है।</p>
         </article>
     </main>
     <footer class="site-footer">
         <div class="container">
-            <p>&copy; <span id="year"></span> <a href="index.html" style="color: inherit; text-decoration: none;">Phone
-                    Number Generator</a>. All rights reserved.</p>
+            <p>&copy; <span id="year"></span> <a href="index.html" style="color: inherit; text-decoration: none;">फ़ोन
+                    नंबर जनरेटर</a>। सर्वाधिकार सुरक्षित।</p>
         </div>
     </footer>
     <script src="../script.js"></script>

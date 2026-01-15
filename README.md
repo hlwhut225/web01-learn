@@ -1,35 +1,39 @@
-# Phone Number Generator - Global Fake Number Tools
+# 电话号码生成器 - 全球虚拟号码工具
 
-## 📖 Project Overview
-This project is a lightweight, web-based tool designed to generate valid-format "fake" phone numbers for software testing, QA verification, and database population. It focuses on providing authentic structures (country codes, mobile prefixes, length) for the top 5 global markets.
+## 📖 项目简介
+本项目是一个轻量级的网页工具，旨在生成格式有效的“虚拟”电话号码，专为软件测试、QA 验证和数据库填充而设计。它专注于为全球前 5 大市场提供真实的号码结构（含正确的国家代码、手机号段前缀及长度规范）。
 
-## 🚀 Key Features
-- **Multi-Country Support**: Generates numbers for:
-  - 🇺🇸 United States (+1)
-  - 🇨🇳 China (+86)
-  - 🇬🇧 United Kingdom (+44)
-  - 🇯🇵 Japan (+81)
-  - 🇩🇪 Germany (+49)
-- **Authentic Formats**: Accurately replicates local numbering plans, including correct area codes and mobile carrier prefixes.
-- **SEO Optimized**: Built with semantic HTML5, structured data (JSON-LD), and optimized meta tags for search engine visibility.
-- **Responsive Design**: Clean, mobile-friendly interface using modern CSS variables and flexbox.
-- **Client-Side Generation**: Logic runs entirely in the browser using JavaScript – no server-side dependencies required.
+## 🚀 核心功能
+- **多国支持**：支持生成以下国家的号码：
+  - 🇺🇸 美国 (United States) (+1)
+  - 🇨🇳 中国 (China) (+86)
+  - 🇬🇧 英国 (United Kingdom) (+44)
+  - 🇯🇵 日本 (Japan) (+81)
+  - 🇩🇪 德国 (Germany) (+49)
+- **多语言支持**：内置 **英语**、**印地语 (Hindi)** 和 **菲律宾语 (Filipino)** 版本，方便不同地区用户使用。
+- **真实格式**：精确复刻各地的编号规则，确保生成的号码在格式验证中表现真实。
+- **SEO 优化**：采用语义化 HTML5 和 JSON-LD 结构化数据构建，针对搜索引擎进行了深度优化。
+- **响应式设计**：基于现代 CSS 变量和 Flexbox 布局，提供整洁、美观且适配移动端的界面。
+- **纯客户端运行**：所有生成逻辑均通过 JavaScript 在浏览器端完成，无需后端服务器支持，安全且快速。
 
-## 🛠️ Technology Stack
-- **Core**: Semantic HTML5, CSS3
-- **Scripting**: Vanilla JavaScript (ES6+)
-- **Styling**: Custom CSS (responsive, variable-based)
+## 🛠️ 技术栈
+- **核心**：HTML5, CSS3
+- **脚本**：原生 JavaScript (ES6+)
+- **样式**：自定义 CSS (响应式设计)
 
-## 📂 Project Structure
-- `index.html`: Main landing page with navigation to all countries.
-- `[country]-phone-number-generator.html`: Dedicated pages for each specific country generator (SEO optimized).
-- `script.js`: Core logic for random number generation and DOM manipulation.
-- `style.css`: Global styles, responsive definitions, and theme variables.
+## 📂 项目结构
+- `index.html`: 英文版主页，包含导航入口。
+- `[country]-phone-number-generator.html`: 各国专属生成器页面（英文版）。
+- `hi/`: **印地语**版本目录，包含翻译后的所有页面。
+- `tl/`: **菲律宾语**版本目录，包含翻译后的所有页面。
+- `script.js`: 核心逻辑文件，负责随机号码生成及页面交互。
+- `style.css`: 全局样式表，定义了主题、布局及响应式规则。
 
-## 🚦 How to Run
-1. Clone the repository.
-2. Open `index.html` directly in any modern web browser.
-3. Select a country and click "Generate" to get a number.
+## 🚦 使用说明
+1. 克隆或下载本项目代码。
+2. 双击根目录下的 `index.html` 文件，在任意现代浏览器中打开。
+3. 点击右上角的语言切换器可切换语言。
+4. 选择目标国家，点击“生成”按钮即可获取测试号码。
 
-## ⚠️ Disclaimer
-These numbers are algorithmically generated for **testing and educational purposes only**. They are not active real numbers and should not be used for illegal activities or spam.
+## ⚠️ 免责声明
+本项目生成的号码完全由算法随机产生，**仅供测试和学习使用**。这些号码并非真实的活跃号码，严禁用于任何非法活动、骚扰或垃圾信息发送。

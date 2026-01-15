@@ -1,148 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Japan Phone Number Generator - +81 Mobile Numbers</title>
+    <title>जापान फोन नंबर जनरेटर - +81 मोबाइल नंबर</title>
     <meta name="description"
-        content="Generate valid Japan phone numbers for software testing. Supports +81 country code and standard mobile number formats.">
+        content="सॉफ्टवेयर परीक्षण के लिए वैध जापान फोन नंबर जेनरेट करें। +81 देश कोड और मानक मोबाइल नंबर प्रारूपों का समर्थन करता है।">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
-    <style>
-        .small-header {
-            padding: 30px 0;
-        }
 
-        .breadcrumb {
-            margin-bottom: 10px;
-            font-size: 0.9rem;
-            color: var(--text-muted);
-        }
-
-        .breadcrumb a {
-            color: var(--accent-color);
-            text-decoration: none;
-        }
-
-        .page-content {
-            max-width: 800px;
-        }
-
-        .tool-section {
-            background: white;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: var(--shadow-md);
-            margin-bottom: 40px;
-            text-align: center;
-        }
-
-        .display-area {
-            background: #f0f2f5;
-            padding: 20px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            font-family: monospace;
-            font-size: 2rem;
-            color: #333;
-        }
-
-        .large-btn {
-            font-size: 1.2rem;
-            padding: 16px 32px;
-            max-width: 300px;
-            margin: 0 auto;
-            cursor: pointer;
-            border: none;
-        }
-
-        .seo-content h2 {
-            color: var(--primary-color);
-            margin-top: 30px;
-            margin-bottom: 16px;
-        }
-
-        .seo-content ul {
-            padding-left: 20px;
-            margin-bottom: 20px;
-            color: var(--text-muted);
-        }
-
-        .seo-content li {
-            margin-bottom: 8px;
-        }
-    </style>
 </head>
 
 <body>
     <header class="site-header">
         <div class="container">
-            <div class="site-logo"><a href="index.html" title="Phone Number Generator Tool">फ़ोन नंबर जनरेटर</a>
+            <div class="site-logo"><a href="index.html" title="फ़ोन नंबर जनरेटर टूल">फ़ोन नंबर जनरेटर</a>
             </div>
             <div class="language-switcher">
-                <a href="../index.html">English</a>
-                <a href="index.html" class="active" title="Hindi">हिन्दी</a>
-                <a href="../tl/index.html" title="Filipino">Filipino</a>
+                <a href="../japan-phone-number-generator.html" title="English">English</a>
+                <a href="japan-phone-number-generator.html" class="active" title="हिन्दी">हिन्दी</a>
+                <a href="../tl/japan-phone-number-generator.html" title="Filipino">Filipino</a>
             </div>
-            <p class="subtitle">Generate valid format phone numbers for testing and verification across the globe.</p>
+            <p class="subtitle">दुनिया भर में परीक्षण और सत्यापन के लिए मान्य प्रारूप फोन नंबर जेनरेट करें।</p>
         </div>
     </header>
 
     <nav class="country-nav">
         <div class="container">
             <ul>
-                <li><a href="index.html" title="Home Page">Home</a></li>
-                <li><a href="us-phone-number-generator.html" title="US phone number generate">United States</a></li>
-                <li><a href="china-phone-number-generator.html" title="China phone number generate">China</a></li>
-                <li><a href="uk-phone-number-generator.html" title="UK phone number generate">United Kingdom</a></li>
+                <li><a href="index.html" title="होम पेज">होम</a></li>
+                <li><a href="us-phone-number-generator.html" title="अमेरिकी फोन नंबर जेनरेट करें">संयुक्त राज्य
+                        अमेरिका</a>
+                </li>
+                <li><a href="china-phone-number-generator.html" title="चीन फोन नंबर जेनरेट करें">चीन</a></li>
+                <li><a href="uk-phone-number-generator.html" title="यूके फोन नंबर जेनरेट करें">यूनाइटेड किंगडम</a></li>
                 <li><a class="curr" href="japan-phone-number-generator.html"
-                        title="Japan phone number generate">Japan</a></li>
-                <li><a href="germany-phone-number-generator.html" title="Germany phone number generate">Germany</a></li>
-
+                        title="जापान फोन नंबर जेनरेट करें">जापान</a></li>
+                <li><a href="germany-phone-number-generator.html" title="जर्मनी फोन नंबर जेनरेट करें">जर्मनी</a></li>
             </ul>
         </div>
     </nav>
     <main class="container page-content">
-        <h1 style="margin-bottom: 20px; color: var(--primary-color);">Japan Phone Number Generator</h1>
+        <h1 style="margin-bottom: 20px; color: var(--primary-color);">जापान फोन नंबर जनरेटर</h1>
         <section class="tool-section">
             <div class="tool-container" data-country="JP">
-                <button id="generate-btn" class="btn large-btn">Generate start</button>
+                <button id="generate-btn" class="btn large-btn">जापानी नंबर जेनरेट करें</button>
                 <div class="result-list"></div>
             </div>
         </section>
         <article class="seo-content">
-            <h2>About Japanese Phone Numbers</h2>
-            <p>Phone numbers in Japan consist of a country code (+81) followed by an area code and subscribers number
-                (typically 090, 080, or 070 for mobile).</p>
+            <h2>जापानी फोन नंबरों के बारे में</h2>
+            <p>जापान में फोन नंबर एक देश कोड (+81) से मिलकर बनते हैं, जिसके बाद एक क्षेत्र कोड और ग्राहक संख्या (आमतौर
+                पर मोबाइल के लिए 090, 080, या 070) होती है।</p>
 
-            <h2>Generate Japan Phone Number for Testing</h2>
-            <p>Our **Japan mobile phone number generator** allows you to simulate **fake Japan phone number** inputs for
-                your systems. Whether validating international formats or testing UI, our **Japan cell phone number
-                generator** provides compliant strings instantly.</p>
+            <h2>परीक्षण के लिए जापान फोन नंबर जेनरेट करें</h2>
+            <p>हमारा **जापान मोबाइल फोन नंबर जनरेटर** आपको अपने सिस्टम के लिए **फर्जी जापान फोन नंबर** इनपुट का अनुकरण
+                करने की अनुमति देता है। चाहे अंतरराष्ट्रीय प्रारूपों को मान्य करना हो या UI का परीक्षण करना हो, हमारा
+                **जापान सेल फोन नंबर जनरेटर** तुरंत अनुपालन तार प्रदान करता है।</p>
 
-            <h2>Random Japan Number Generator (+81)</h2>
-            <p>Create a **random Japan phone number** with the correct country code and prefix. This **+81 phone number
-                generator** ensures your test data aligns with Japanese telecommunication standards, perfect for global
-                app development.</p>
+            <h2>यादृच्छिक जापान नंबर जनरेटर (+81)</h2>
+            <p>सही देश कोड और उपसर्ग के साथ एक **यादृच्छिक जापान फोन नंबर** बनाएं। यह **+81 फोन नंबर जनरेटर** सुनिश्चित
+                करता है कि आपका परीक्षण डेटा जापानी दूरसंचार मानकों के साथ संरेखित है, जो वैश्विक ऐप विकास के लिए एकदम
+                सही है।</p>
 
-            <h2>Japan Phone Number Generator for Verification</h2>
-            <p>Simulate user registration with our **Japan phone number generator for verification** testing. These
-                **fake phone number generator Japan** results mimic real mobile numbers, helping you robustly test your
-                **random phone number generator Japan** handling logic.</p>
+            <h2>सत्यापन के लिए जापान फोन नंबर जनरेटर</h2>
+            <p>हमारे **जापान फोन नंबर जनरेटर सत्यापन के लिए** परीक्षण के साथ उपयोगकर्ता पंजीकरण का अनुकरण करें। ये
+                **फर्जी फोन नंबर जनरेटर जापान** परिणाम वास्तविक मोबाइल नंबरों की नकल करते हैं, जिससे आपको अपने
+                **यादृच्छिक फोन नंबर जनरेटर जापान** हैंडलिंग तर्क का मजबूती से परीक्षण करने में मदद मिलती है।</p>
 
-            <h2>Free Japan Virtual Phone Number Tool</h2>
-            <p>Access our **free Japan phone number generator** anytime. It is a simple, no-cost way to get a **fake
-                mobile number Japan** for software testing. Rely on this **Japan phone number generator** for fast,
-                accurate mock data.</p>
+            <h2>मुफ्त जापान वर्चुअल फोन नंबर टूल</h2>
+            <p>हमारे **मुफ्त जापान फोन नंबर जनरेटर** का कभी भी उपयोग करें। यह सॉफ्टवेयर परीक्षण के लिए **फर्जी मोबाइल
+                नंबर जापान** प्राप्त करने का एक सरल, बिना किसी लागत के तरीका है। तेज, सटीक मॉक डेटा के लिए इस **जापान
+                फोन नंबर जनरेटर** पर भरोसा करें।</p>
         </article>
     </main>
     <footer class="site-footer">
         <div class="container">
-            <p>&copy; <span id="year"></span> <a href="index.html" style="color: inherit; text-decoration: none;">Phone
-                    Number Generator</a>. All rights reserved.</p>
+            <p>&copy; <span id="year"></span> <a href="index.html" style="color: inherit; text-decoration: none;">फ़ोन
+                    नंबर जनरेटर</a>। सर्वाधिकार सुरक्षित।</p>
         </div>
     </footer>
     <script src="../script.js"></script>

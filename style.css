@@ -323,3 +323,63 @@ main.page-content {
         /* Add padding for scroll feeling */
     }
 }
+
+/* Sub-page Specific Styles */
+.small-header {
+    padding: 30px 0;
+}
+
+.breadcrumb {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.breadcrumb a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.tool-section {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.display-area {
+    background: #f0f2f5;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-family: monospace;
+    font-size: 2rem;
+    color: #333;
+}
+
+.large-btn {
+    font-size: 1.2rem;
+    padding: 16px 32px;
+    max-width: 300px;
+    margin: 0 auto;
+    cursor: pointer;
+    border: none;
+}
+
+.seo-content h2 {
+    color: var(--primary-color);
+    margin-top: 30px;
+    margin-bottom: 16px;
+}
+
+.seo-content ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+    color: var(--text-muted);
+}
+
+.seo-content li {
+    margin-bottom: 8px;
+}

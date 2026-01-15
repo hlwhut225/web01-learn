@@ -1,149 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Japan Phone Number Generator - +81 Mobile Numbers</title>
+    <title>Generator ng Numero ng Telepono sa Japan - +81 Mobile na Numero</title>
     <meta name="description"
-        content="Generate valid Japan phone numbers for software testing. Supports +81 country code and standard mobile number formats.">
+        content="Bumuo ng wastong numero ng telepono sa Japan para sa pagsubok ng software. Sinusuportahan ang +81 country code at karaniwang mga format ng numero ng mobile.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
-    <style>
-        .small-header {
-            padding: 30px 0;
-        }
 
-        .breadcrumb {
-            margin-bottom: 10px;
-            font-size: 0.9rem;
-            color: var(--text-muted);
-        }
-
-        .breadcrumb a {
-            color: var(--accent-color);
-            text-decoration: none;
-        }
-
-        .page-content {
-            max-width: 800px;
-        }
-
-        .tool-section {
-            background: white;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: var(--shadow-md);
-            margin-bottom: 40px;
-            text-align: center;
-        }
-
-        .display-area {
-            background: #f0f2f5;
-            padding: 20px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            font-family: monospace;
-            font-size: 2rem;
-            color: #333;
-        }
-
-        .large-btn {
-            font-size: 1.2rem;
-            padding: 16px 32px;
-            max-width: 300px;
-            margin: 0 auto;
-            cursor: pointer;
-            border: none;
-        }
-
-        .seo-content h2 {
-            color: var(--primary-color);
-            margin-top: 30px;
-            margin-bottom: 16px;
-        }
-
-        .seo-content ul {
-            padding-left: 20px;
-            margin-bottom: 20px;
-            color: var(--text-muted);
-        }
-
-        .seo-content li {
-            margin-bottom: 8px;
-        }
-    </style>
 </head>
 
 <body>
     <header class="site-header">
         <div class="container">
-            <div class="site-logo"><a href="index.html" title="Phone Number Generator Tool">Tagabuo ng Numero ng
+            <div class="site-logo"><a href="index.html" title="Tool ng Tagabuo ng Numero ng Telepono">Tagabuo ng Numero
+                    ng
                     Telepono</a>
             </div>
             <div class="language-switcher">
-                <a href="../index.html">English</a>
-                <a href="../hi/index.html" title="Hindi">हिन्दी</a>
-                <a href="index.html" class="active" title="Filipino">Filipino</a>
+                <a href="../japan-phone-number-generator.html" title="English">English</a>
+                <a href="../hi/japan-phone-number-generator.html" title="हिन्दी">हिन्दी</a>
+                <a href="japan-phone-number-generator.html" class="active" title="Filipino">Filipino</a>
             </div>
-            <p class="subtitle">Generate valid format phone numbers for testing and verification across the globe.</p>
+            <p class="subtitle">Bumuo ng wastong format na mga numero ng telepono para sa pagsubok at pag-verify sa
+                buong mundo.</p>
         </div>
     </header>
 
     <nav class="country-nav">
         <div class="container">
             <ul>
-                <li><a href="index.html" title="Home Page">Home</a></li>
-                <li><a href="us-phone-number-generator.html" title="US phone number generate">United States</a></li>
-                <li><a href="china-phone-number-generator.html" title="China phone number generate">China</a></li>
-                <li><a href="uk-phone-number-generator.html" title="UK phone number generate">United Kingdom</a></li>
+                <li><a href="index.html" title="Pahina ng Tahanan">Tahanan</a></li>
+                <li><a href="us-phone-number-generator.html" title="bumuo ng numero ng telepono sa US">Estados
+                        Unidos</a></li>
+                <li><a href="china-phone-number-generator.html" title="bumuo ng numero ng telepono sa China">Tsina</a>
+                </li>
+                <li><a href="uk-phone-number-generator.html" title="bumuo ng numero ng telepono sa UK">United
+                        Kingdom</a></li>
                 <li><a class="curr" href="japan-phone-number-generator.html"
-                        title="Japan phone number generate">Japan</a></li>
-                <li><a href="germany-phone-number-generator.html" title="Germany phone number generate">Germany</a></li>
-
+                        title="bumuo ng numero ng telepono sa Japan">Hapon</a></li>
+                <li><a href="germany-phone-number-generator.html"
+                        title="bumuo ng numero ng telepono sa Germany">Alemanya</a>
+                </li>
             </ul>
         </div>
     </nav>
     <main class="container page-content">
-        <h1 style="margin-bottom: 20px; color: var(--primary-color);">Japan Phone Number Generator</h1>
+        <h1 style="margin-bottom: 20px; color: var(--primary-color);">Generator ng Numero ng Telepono sa Japan</h1>
         <section class="tool-section">
             <div class="tool-container" data-country="JP">
-                <button id="generate-btn" class="btn large-btn">Generate start</button>
+                <button id="generate-btn" class="btn large-btn">Bumuo ng Numero ng Japan</button>
                 <div class="result-list"></div>
             </div>
         </section>
         <article class="seo-content">
-            <h2>About Japanese Phone Numbers</h2>
-            <p>Phone numbers in Japan consist of a country code (+81) followed by an area code and subscribers number
-                (typically 090, 080, or 070 for mobile).</p>
+            <h2>Tungkol sa mga Numero ng Telepono ng Japan</h2>
+            <p>Ang mga numero ng telepono sa Japan ay binubuo ng country code (+81) na sinusundan ng area code at numero
+                ng subscriber (karaniwang 090, 080, o 070 para sa mobile).</p>
 
-            <h2>Generate Japan Phone Number for Testing</h2>
-            <p>Our **Japan mobile phone number generator** allows you to simulate **fake Japan phone number** inputs for
-                your systems. Whether validating international formats or testing UI, our **Japan cell phone number
-                generator** provides compliant strings instantly.</p>
+            <h2>Bumuo ng Numero ng Telepono sa Japan para sa Pagsubok</h2>
+            <p>Pinapayagan ka ng aming **generator ng numero ng mobile phone sa Japan** na gayahin ang mga input ng
+                **pekeng numero ng telepono sa Japan** para sa iyong mga system. Nagva-validate man ng mga internasyonal
+                na format o sumusubok ng UI, ang aming **generator ng numero ng cell phone sa Japan** ay nagbibigay ng
+                mga sumusunod na string kaagad.</p>
 
-            <h2>Random Japan Number Generator (+81)</h2>
-            <p>Create a **random Japan phone number** with the correct country code and prefix. This **+81 phone number
-                generator** ensures your test data aligns with Japanese telecommunication standards, perfect for global
-                app development.</p>
+            <h2>Random na Generator ng Numero sa Japan (+81)</h2>
+            <p>Gumawa ng **random na numero ng telepono sa Japan** gamit ang tamang country code at prefix. Ang **+81
+                phone number generator** na ito ay nagsisiguro na ang iyong data ng pagsubok ay naaayon sa mga
+                pamantayan ng telekomunikasyon ng Japan, perpekto para sa pandaigdigang pagbuo ng app.</p>
 
-            <h2>Japan Phone Number Generator for Verification</h2>
-            <p>Simulate user registration with our **Japan phone number generator for verification** testing. These
-                **fake phone number generator Japan** results mimic real mobile numbers, helping you robustly test your
-                **random phone number generator Japan** handling logic.</p>
+            <h2>Generator ng Numero ng Telepono sa Japan para sa Pag-verify</h2>
+            <p>Gayàhin ang pagpaparehistro ng user gamit ang aming **generator ng numero ng telepono sa Japan para sa
+                pag-verify** na pagsubok. Ang mga resulta ng **pekeng generator ng numero ng telepono sa Japan** na ito
+                ay gumagaya sa mga totoong numero ng mobile, na tumutulong sa iyong mahusay na subukan ang iyong
+                **random na generator ng numero ng telepono sa Japan** handling logic.</p>
 
-            <h2>Free Japan Virtual Phone Number Tool</h2>
-            <p>Access our **free Japan phone number generator** anytime. It is a simple, no-cost way to get a **fake
-                mobile number Japan** for software testing. Rely on this **Japan phone number generator** for fast,
-                accurate mock data.</p>
+            <h2>Libreng Tool sa Pagbuo ng Virtual na Numero ng Telepono sa Japan</h2>
+            <p>I-access ang aming **libreng generator ng numero ng telepono sa Japan** anumang oras. Ito ay isang simple
+                at walang gastos na paraan upang makakuha ng **pekeng numero ng mobile sa Japan** para sa software
+                testing. Umasa sa **generator ng numero ng telepono sa Japan** na ito para sa mabilis at tumpak na mock
+                data.</p>
         </article>
     </main>
     <footer class="site-footer">
         <div class="container">
-            <p>&copy; <span id="year"></span> <a href="index.html" style="color: inherit; text-decoration: none;">Phone
-                    Number Generator</a>. All rights reserved.</p>
+            <p>&copy; <span id="year"></span> <a href="index.html"
+                    style="color: inherit; text-decoration: none;">Tagabuo ng Numero ng Telepono</a>. Nakalaan ang lahat
+                ng karapatan.</p>
         </div>
     </footer>
     <script src="../script.js"></script>
