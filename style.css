@@ -35,6 +35,49 @@ body {
     max-width: 95%;
     /* Responsive fallback */
     margin: 0 auto;
+    position: relative;
+    /* For Language Switcher positioning */
+}
+
+/* Language Switcher */
+.language-switcher {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 0.85rem;
+    background: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.language-switcher a {
+    color: var(--text-muted);
+    text-decoration: none;
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+.language-switcher a:first-child {
+    margin-left: 0;
+}
+
+.language-switcher a:hover,
+.language-switcher a.active {
+    color: var(--accent-color);
+    font-weight: 700;
+}
+
+@media (max-width: 600px) {
+    .language-switcher {
+        position: static;
+        display: block;
+        margin-bottom: 15px;
+        text-align: right;
+        background: none;
+        box-shadow: none;
+        padding: 0;
+    }
 }
 
 /* Header */
