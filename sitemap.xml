@@ -1,69 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.example.com/</loc>
-    <lastmod>2023-10-27</lastmod>
+    <loc>https://phone-number-generator.online/index.html</loc>
+    <lastmod>2026-01-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.example.com/us-phone-number-generator</loc>
-    <lastmod>2023-10-27</lastmod>
+    <loc>https://phone-number-generator.online/us-phone-number-generator.html</loc>
+    <lastmod>2026-01-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.example.com/china-phone-number-generator</loc>
-    <lastmod>2023-10-27</lastmod>
+    <loc>https://phone-number-generator.online/china-phone-number-generator.html</loc>
+    <lastmod>2026-01-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.example.com/uk-phone-number-generator</loc>
-    <lastmod>2023-10-27</lastmod>
+    <loc>https://phone-number-generator.online/uk-phone-number-generator.html</loc>
+    <lastmod>2026-01-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.example.com/japan-phone-number-generator</loc>
-    <lastmod>2023-10-27</lastmod>
+    <loc>https://phone-number-generator.online/japan-phone-number-generator.html</loc>
+    <lastmod>2026-01-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.example.com/germany-phone-number-generator</loc>
-    <lastmod>2023-10-27</lastmod>
+    <loc>https://phone-number-generator.online/germany-phone-number-generator.html</loc>
+    <lastmod>2026-01-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  <!-- Hindi (hi) Pages -->
   <url>
-    <loc>https://www.example.com/france-phone-number-generator</loc>
-    <lastmod>2023-10-27</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://phone-number-generator.online/hi/index.html</loc>
+    <lastmod>2026-01-16</lastmod>
+    <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.example.com/australia-phone-number-generator</loc>
-    <lastmod>2023-10-27</lastmod>
+    <loc>https://phone-number-generator.online/hi/us-phone-number-generator.html</loc>
+    <lastmod>2026-01-16</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://phone-number-generator.online/hi/china-phone-number-generator.html</loc>
+    <lastmod>2026-01-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://phone-number-generator.online/hi/uk-phone-number-generator.html</loc>
+    <lastmod>2026-01-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://phone-number-generator.online/hi/japan-phone-number-generator.html</loc>
+    <lastmod>2026-01-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://phone-number-generator.online/hi/germany-phone-number-generator.html</loc>
+    <lastmod>2026-01-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <!-- Tagalog (tl) Pages -->
+  <url>
+    <loc>https://phone-number-generator.online/tl/index.html</loc>
+    <lastmod>2026-01-16</lastmod>
+    <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.example.com/canada-phone-number-generator</loc>
-    <lastmod>2023-10-27</lastmod>
+    <loc>https://phone-number-generator.online/tl/us-phone-number-generator.html</loc>
+    <lastmod>2026-01-16</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.example.com/india-phone-number-generator</loc>
-    <lastmod>2023-10-27</lastmod>
+    <loc>https://phone-number-generator.online/tl/china-phone-number-generator.html</loc>
+    <lastmod>2026-01-16</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.example.com/brazil-phone-number-generator</loc>
-    <lastmod>2023-10-27</lastmod>
+    <loc>https://phone-number-generator.online/tl/uk-phone-number-generator.html</loc>
+    <lastmod>2026-01-16</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://phone-number-generator.online/tl/japan-phone-number-generator.html</loc>
+    <lastmod>2026-01-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://phone-number-generator.online/tl/germany-phone-number-generator.html</loc>
+    <lastmod>2026-01-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
 </urlset>
