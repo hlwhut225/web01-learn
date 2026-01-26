@@ -1,0 +1,21 @@
+# Phone Number Generator
+
+> A free online tool to generate valid format fake phone numbers for testing and verification purposes. Supports US, UK, China, Japan, Germany, and more.
+
+## Capabilities
+- Generate valid format mobile and landline numbers
+- Includes correct country codes and area codes
+- Ideal for software testing, QA, and privacy verification
+- Completely free and works offline (client-side generation)
+
+## Core Tools
+- [US Phone Number Generator](https://phone-number-generator.online/us-phone-number-generator.html)
+- [China Phone Number Generator](https://phone-number-generator.online/china-phone-number-generator.html)
+- [UK Phone Number Generator](https://phone-number-generator.online/uk-phone-number-generator.html)
+- [Japan Phone Number Generator](https://phone-number-generator.online/japan-phone-number-generator.html)
+- [Germany Phone Number Generator](https://phone-number-generator.online/germany-phone-number-generator.html)
+
+## Language Support
+- [English](https://phone-number-generator.online/index.html)
+- [Hindi (हिन्दी)](https://phone-number-generator.online/hi/index.html)
+- [Tagalog (Filipino)](https://phone-number-generator.online/tl/index.html)
